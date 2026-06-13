@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — QuizZap</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --border: #2a2a3a;
+      --accent: #7c5cfc;
+      --accent-soft: rgba(124, 92, 252, 0.12);
+      --text: #e8e8f0;
+      --text-muted: #888899;
+      --text-dim: #555566;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 28px 0;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .brand-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+
+    .hero {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    main {
+      padding: 48px 0 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 24px 0 10px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      margin: 12px 0 16px;
+      padding: 0;
+    }
+
+    ul li {
+      color: var(--text-muted);
+      padding: 5px 0 5px 20px;
+      position: relative;
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.7;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+
+    .card p { margin-bottom: 8px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    .contact-block {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .contact-block .label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .contact-block .name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .contact-block a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .contact-block a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 16px; }
+      .hero { padding: 40px 0 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="brand-logo">Q</div>
+        <span class="brand-name">QuizZap</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <p class="eyebrow">Documento legal</p>
+      <h1>Política de Privacidade</h1>
+      <p class="meta">Última atualização: 21 de maio de 2026</p>
+    </div>
+
+    <main>
+
+      <section>
+        <p>Esta Política de Privacidade descreve como o aplicativo QuizZap coleta, usa, armazena, compartilha e protege informações dos usuários. Ao utilizar o QuizZap, você concorda com o tratamento de dados descrito nesta Política.</p>
+      </section>
+
+      <section>
+        <h2>1. Quem somos</h2>
+        <p>O QuizZap é um aplicativo de perguntas e respostas desenvolvido por <strong>RNTEC</strong>.</p>
+        <div class="contact-block">
+          <span class="label">Contato</span>
+          <span class="name">RNTEC</span>
+          <a href="mailto:netosramiro@gmail.com">netosramiro@gmail.com</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Dados que podemos coletar</h2>
+
+        <h3>2.1 Dados de conta</h3>
+        <p>Quando você cria uma conta ou faz login, podemos coletar:</p>
+        <ul>
+          <li>Nome</li>
+          <li>E-mail</li>
+          <li>Identificador único do usuário</li>
+          <li>Foto de perfil (quando fornecida por login social)</li>
+          <li>País ou código de país aproximado do dispositivo</li>
+        </ul>
+        <p>Esses dados são usados para identificar sua conta, permitir login, salvar progresso e exibir informações de perfil.</p>
+
+        <h3>2.2 Dados de uso e progresso</h3>
+        <p>Durante o uso do QuizZap, podemos coletar:</p>
+        <ul>
+          <li>Pontuação, XP, nível e streak</li>
+          <li>Quantidade de quizzes jogados</li>
+          <li>Respostas corretas, erradas e precisão média</li>
+          <li>Badges desbloqueadas</li>
+          <li>Estatísticas por categoria</li>
+          <li>Participação em desafios diários</li>
+          <li>Dados de ranking e partidas multiplayer</li>
+        </ul>
+
+        <h3>2.3 Dados de multiplayer</h3>
+        <p>No modo multiplayer, podemos armazenar:</p>
+        <ul>
+          <li>Código e status da sala</li>
+          <li>Identificadores e pontuação dos jogadores</li>
+          <li>Lista de perguntas e categoria da partida</li>
+        </ul>
+
+        <h3>2.4 Dados de anúncios</h3>
+        <p>O QuizZap pode exibir anúncios por meio de serviços como Google AdMob, que podem usar o Advertising ID do dispositivo para exibição, medição e personalização de anúncios, conforme as configurações do usuário e políticas do provedor.</p>
+
+        <h3>2.5 Dados técnicos</h3>
+        <ul>
+          <li>Informações e versão do dispositivo/sistema operacional</li>
+          <li>Eventos de uso do aplicativo</li>
+          <li>Dados de falhas, erros ou desempenho</li>
+          <li>Identificadores técnicos para segurança e autenticação</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Como usamos os dados</h2>
+        <ul>
+          <li>Criar e gerenciar sua conta</li>
+          <li>Permitir login e autenticação</li>
+          <li>Salvar progresso, XP, nível, streak e badges</li>
+          <li>Gerar rankings e desafios diários</li>
+          <li>Permitir partidas multiplayer</li>
+          <li>Melhorar a experiência e detectar erros</li>
+          <li>Exibir anúncios</li>
+          <li>Cumprir obrigações legais e políticas das plataformas</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Compartilhamento de dados</h2>
+        <p>Podemos compartilhar dados com serviços de terceiros necessários para o funcionamento do app:</p>
+        <ul>
+          <li><strong>Firebase Authentication</strong> — login e autenticação</li>
+          <li><strong>Firebase Firestore</strong> — armazenamento de dados</li>
+          <li><strong>Google AdMob</strong> — exibição de anúncios</li>
+          <li>Serviços de análise, diagnóstico ou infraestrutura quando utilizados</li>
+        </ul>
+        <div class="card">
+          <p><strong>Não vendemos seus dados pessoais.</strong> O compartilhamento ocorre apenas quando necessário para fornecer funcionalidades do app, melhorar o serviço, exibir anúncios, cumprir obrigações legais ou proteger usuários e a plataforma.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Anúncios e Advertising ID</h2>
+        <p>O QuizZap pode exibir anúncios recompensados, banners ou outros formatos. Provedores como Google AdMob podem usar o Advertising ID do Android para fins de publicidade, medição e prevenção de fraude.</p>
+        <p>Você pode redefinir ou limitar o uso do Advertising ID nas <strong>configurações do seu dispositivo Android</strong>.</p>
+      </section>
+
+      <section>
+        <h2>6. Base legal para tratamento de dados</h2>
+        <p>Tratamos dados pessoais com base em uma ou mais das seguintes bases legais:</p>
+        <ul>
+          <li>Execução do serviço solicitado pelo usuário</li>
+          <li>Consentimento do usuário</li>
+          <li>Cumprimento de obrigação legal ou regulatória</li>
+          <li>Legítimo interesse para segurança e melhoria do app</li>
+          <li>Exercício regular de direitos</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Armazenamento e segurança</h2>
+        <p>Adotamos medidas razoáveis para proteger os dados dos usuários contra acesso não autorizado, perda, uso indevido, alteração ou divulgação indevida.</p>
+        <p>Os dados podem ser armazenados em serviços de infraestrutura em nuvem como Firebase/Google Cloud, que podem processar dados em servidores localizados no Brasil ou em outros países.</p>
+        <p>Embora adotemos medidas de segurança, nenhum sistema é totalmente livre de riscos.</p>
+      </section>
+
+      <section>
+        <h2>8. Retenção e exclusão de dados</h2>
+        <p>Mantemos os dados pelo tempo necessário para manter sua conta ativa, fornecer funcionalidades do app, cumprir obrigações legais, resolver disputas e prevenir fraude ou abuso.</p>
+        <p>Você pode solicitar a exclusão dos seus dados entrando em contato por e-mail. Após a solicitação, excluiremos ou anonimizaremos os dados, salvo quando houver necessidade de retenção por obrigação legal ou segurança.</p>
+        <div class="contact-block">
+          <span class="label">Solicitar exclusão de dados</span>
+          <a href="mailto:netosramiro@gmail.com">netosramiro@gmail.com</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>9. Direitos do usuário (LGPD)</h2>
+        <p>De acordo com a LGPD e demais legislações aplicáveis, você pode ter direito a:</p>
+        <ul>
+          <li>Confirmar se tratamos seus dados pessoais</li>
+          <li>Acessar e corrigir seus dados</li>
+          <li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários</li>
+          <li>Solicitar portabilidade dos dados, quando aplicável</li>
+          <li>Revogar consentimento</li>
+          <li>Solicitar informações sobre compartilhamento de dados</li>
+        </ul>
+        <div class="contact-block">
+          <span class="label">Exercer seus direitos</span>
+          <a href="mailto:netosramiro@gmail.com">netosramiro@gmail.com</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>10. Privacidade de crianças e adolescentes</h2>
+        <p>O QuizZap não é direcionado especificamente a crianças pequenas. Caso o aplicativo seja utilizado por menores de idade, recomenda-se supervisão dos pais ou responsáveis.</p>
+        <p>Se identificarmos coleta indevida de dados de criança sem consentimento adequado, poderemos excluir as informações associadas.</p>
+      </section>
+
+      <section>
+        <h2>11. Links e serviços de terceiros</h2>
+        <p>O app pode utilizar serviços de terceiros, como Firebase e AdMob, que possuem suas próprias políticas de privacidade. Recomendamos que você consulte as políticas desses provedores para entender como eles tratam informações.</p>
+      </section>
+
+      <section>
+        <h2>12. Alterações nesta Política</h2>
+        <p>Podemos atualizar esta Política de Privacidade periodicamente. Quando houver alterações relevantes, atualizaremos a data desta política e, quando necessário, informaremos os usuários por meio do aplicativo ou outros canais adequados.</p>
+      </section>
+
+      <section>
+        <h2>13. Contato</h2>
+        <p>Se você tiver dúvidas, solicitações ou reclamações sobre esta Política de Privacidade ou sobre o tratamento de seus dados pessoais, entre em contato:</p>
+        <div class="contact-block">
+          <span class="label">Desenvolvedor</span>
+          <span class="name">RNTEC</span>
+          <a href="mailto:netosramiro@gmail.com">netosramiro@gmail.com</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">
+      © 2026 RNTEC · QuizZap · Todos os direitos reservados
+    </div>
+  </footer>
+
+</body>
+</html>
+s
